@@ -6,9 +6,9 @@ Welcome to the Full Stack Contact Form Backend repository! This project serves a
 
 This project is a part of a tutorial series available on [Dev.to](https://dev.to/) that walks you through creating a complete full-stack contact form. The series covers the following aspects:
 
-[Part 1 - Building a Full Stack Contact Form: React Frontend](https://dev.to/elenadiaz32505/creating-a-full-stack-contact-form-using-react-and-node-eoh-temp-slug-6816062)
-[Part 2 - Building a Full Stack Contact Form: Node.js Backend](https://dev.to/elenadiaz32505/part-2-building-a-full-stack-contact-form-from-react-frontend-to-nodejs-backend-553e-temp-slug-1567873)
-[Part 3 - Building a Full Stack Contact Form: Deployment](https://dev.to/elenadiaz32505/part-3-building-a-full-stack-contact-form-deployment-3o4d-temp-slug-3281173)
+- [Part 1 - Building a Full Stack Contact Form: React Frontend](https://dev.to/elenadiaz32505/creating-a-full-stack-contact-form-using-react-and-node-eoh-temp-slug-6816062)
+- [Part 2 - Building a Full Stack Contact Form: Node.js Backend](https://dev.to/elenadiaz32505/part-2-building-a-full-stack-contact-form-from-react-frontend-to-nodejs-backend-553e-temp-slug-1567873)
+- [Part 3 - Building a Full Stack Contact Form: Deployment](https://dev.to/elenadiaz32505/part-3-building-a-full-stack-contact-form-deployment-3o4d-temp-slug-3281173)
 
 ## Backend Technologies
 
@@ -36,9 +36,9 @@ Make sure to refer to the tutorial articles on Dev.to for a step-by-step guide o
 
 If you're interested in the complete tutorial series, here are the links to the articles on [Dev.to/elenadiaz32505](https://dev.to/elenadiaz32505):
 
-[Part 1 - Building a Full Stack Contact Form: React Frontend](https://dev.to/elenadiaz32505/creating-a-full-stack-contact-form-using-react-and-node-eoh-temp-slug-6816062)
-[Part 2 - Building a Full Stack Contact Form: Node.js Backend](https://dev.to/elenadiaz32505/part-2-building-a-full-stack-contact-form-from-react-frontend-to-nodejs-backend-553e-temp-slug-1567873)
-[Part 3 - Building a Full Stack Contact Form: Deployment](https://dev.to/elenadiaz32505/part-3-building-a-full-stack-contact-form-deployment-3o4d-temp-slug-3281173)
+- [Part 1 - Building a Full Stack Contact Form: React Frontend](https://dev.to/elenadiaz32505/creating-a-full-stack-contact-form-using-react-and-node-eoh-temp-slug-6816062)
+- [Part 2 - Building a Full Stack Contact Form: Node.js Backend](https://dev.to/elenadiaz32505/part-2-building-a-full-stack-contact-form-from-react-frontend-to-nodejs-backend-553e-temp-slug-1567873)
+- [Part 3 - Building a Full Stack Contact Form: Deployment](https://dev.to/elenadiaz32505/part-3-building-a-full-stack-contact-form-deployment-3o4d-temp-slug-3281173)
 
 Feel free to explore, learn, and adapt this project to your needs. If you have any questions or feedback, please don't hesitate to reach out.
 
