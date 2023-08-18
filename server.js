@@ -1,4 +1,3 @@
-const https = require('https');
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
@@ -6,6 +5,9 @@ var cors = require('cors');
 const fs = require('fs');
 const creds = require('./config');
 const serverPort = 5000;
+
+//For HTTPS
+//const https = require('https');
 
 const app = express();
 app.use(cors());
@@ -82,16 +84,19 @@ router.post('/send', (req, res, next) => {
 	});
 });
 
-//Create https server, make sure to set the path to the certificates
-const httpsServer = https.createServer(
-	{
-		key: fs.readFileSync('path-to-privkey.pem'),
-		cert: fs.readFileSync('path-to-cert.pem'),
-	},
-	app
-);
-httpsServer.listen(serverPort, () =>
+//This is for https server, make sure to set the path to the certificates
+// const httpsServer = https.createServer(
+// 	{
+// 		key: fs.readFileSync('path-to-privkey.pem'),
+// 		cert: fs.readFileSync('path-to-cert.pem'),
+// 	},
+// 	app
+// );
+// httpsServer.listen(serverPort, () =>
+// 	console.log(`backend is running on port ${serverPort}`)
+// );
+
+//For testing locally
+app.listen(serverPort, () =>
 	console.log(`backend is running on port ${serverPort}`)
 );
-
-//app.listen(serverPort, () => console.log(`backend is running on port ${serverPort}`));
