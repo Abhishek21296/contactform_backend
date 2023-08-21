@@ -38,9 +38,9 @@ Make sure to refer to the tutorial articles on Dev.to for a step-by-step guide o
 
 If you're interested in the complete tutorial series, here are the links to the articles on [dev.to/elenadiaz32505](https://dev.to/elenadiaz32505):
 
-- [Part 1 - Building a Full Stack Contact Form: React Frontend](https://dev.to/elenadiaz32505/part-1-full-stack-contact-form-getting-started-react-frontend-2023-1bh4)
-- [Part 2 - Building a Full Stack Contact Form: Node.js Backend](https://dev.to/elenadiaz32505/part-2-building-a-full-stack-contact-form-nodejs-backend-2023-jdp)
-- [Part 3 - Building a Full Stack Contact Form: Deployment](https://dev.to/elenadiaz32505/part-3-building-a-full-stack-contact-form-deployment-2023-2dj6)
+- [Part 1 - React Frontend](https://dev.to/elenadiaz32505/part-1-full-stack-contact-form-getting-started-react-frontend-2023-1bh4)
+- [Part 2 - Node.js Backend](https://dev.to/elenadiaz32505/part-2-building-a-full-stack-contact-form-nodejs-backend-2023-jdp)
+- [Part 3 - Deployment](https://dev.to/elenadiaz32505/part-3-building-a-full-stack-contact-form-deployment-2023-2dj6)
 
 Feel free to explore, learn, and adapt this project to your needs. If you have any questions or feedback, please don't hesitate to reach out.
 
