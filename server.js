@@ -25,10 +25,11 @@ var transport = {
 		user: creds.USER,
 		pass: creds.PASS,
 	},
-	from: creds.EMAIL,
+	secure: true
 };
 
 var transporter = nodemailer.createTransport(transport);
+console.log(transport);
 transporter.verify((error, success) => {
 	if (error) {
 		console.log(error);
@@ -37,23 +38,22 @@ transporter.verify((error, success) => {
 	}
 });
 
-router.post('/send', (req, res, next) => {
+router.post('/contact-bge', (req, res, next) => {
 	var name = req.body.name;
 	var email = req.body.email;
 	var message = req.body.message;
-	var senderEmail = `${name} <${creds.EMAIL}>`;
-	var yourEmail = `${creds.YOURNAME} <${creds.EMAIL}>`;
-	var content = `name: ${name} \n email: ${email} \n message: ${message} `;
+	var number = req.body.phone;
+	var content = `name: ${name} \n number: ${number} \n email: ${email} \n message: ${message} `;
 	var mail = {
-		from: senderEmail,
-		to: creds.EMAIL, // This is email address where you will receive messages
+		from: creds.EMAIL,
+		to: 'bharatgreenurja@gmail.com', // This is email address where you will receive messages
 		subject: `New Portfolio Message from ${name}`,
 		text: content,
 	};
 
 	transporter.sendMail(mail, (err, data) => {
-		console.log(err);
-		console.log(data);
+		console.log('a',err);
+		console.log('b',data);
 		if (err) {
 			res.json({
 				status: 'fail',
@@ -66,11 +66,11 @@ router.post('/send', (req, res, next) => {
 			//Send Auto Reply email
 			transporter.sendMail(
 				{
-					from: yourEmail,
+					from: creds.EMAIL,
 					to: email,
 					subject: 'Message received',
 					text: `Hi ${name},\nThank you for sending me a message. I will get back to you soon.\n\nBest Regards,\n${creds.YOURNAME}\n${creds.YOURSITE}\n\n\nMessage Details\nName: ${name}\n Email: ${email}\n Message: ${message}`,
-					html: `<p>Hi ${name},<br>Thank you for sending me a message. I will get back to you soon.<br><br>Best Regards,<br>${creds.YOURNAME}<br>${creds.YOURSITE}<br><br><br>Message Details<br>Name: ${name}<br> Email: ${email}<br> Message: ${message}</p>`,
+					html: `<p>Hi ${name},<br>Thank you for sending me a message. I will get back to you soon.<br><br>Best Regards,<br>${creds.YOURNAME}<br>${creds.YOURSITE}<br><br><br>Message Details<br>Name: ${name}<br> Email: ${email}<br>Phone:${number}<br> Message: ${message}</p>`,
 				},
 				function (error, info) {
 					if (error) {

@@ -1,10 +1,12 @@
+require('dotenv').config()
+
 // change the following details with your information
 module.exports = {
-	USER: 'NewEmail@domain.com',
-	PASS: 'password',
-	EMAIL: 'NewEmail@domain.com',
-	HOST: 'smtp.mailhost.com',
-	MAILPORT: 555,
-	YOURNAME: 'Your Name',
-	YOURSITE: 'www.yoursite.com',
+	USER: process.env.USER,
+	PASS: process.env.PASS,
+	EMAIL: process.env.EMAIL,
+	HOST: process.env.HOST,
+	MAILPORT: process.env.MAILPORT,
+	YOURNAME: process.env.YOURNAME,
+	YOURSITE: process.env.YOURSITE,
 };
